@@ -1,0 +1,14 @@
+name: Test Project
+on:
+  push:
+    branches:
+      - main  # Change this to the appropriate branch name if needed
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      # Add more steps for your testing process here
